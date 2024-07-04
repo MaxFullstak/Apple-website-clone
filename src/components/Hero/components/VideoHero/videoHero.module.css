@@ -1,0 +1,7 @@
+.container {
+	@apply h-5/6 w-full flex-center flex-col;
+}
+
+.video_container {
+	@apply md:w-10/12 w-9/12;
+}

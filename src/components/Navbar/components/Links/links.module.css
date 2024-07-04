@@ -1,0 +1,7 @@
+.container {
+	@apply flex  flex-1 justify-center max-sm:hidden;
+}
+
+.link_style {
+	@apply px-5 text-sm cursor-pointer text-gray hover:text-white transition-all;
+}

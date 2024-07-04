@@ -1,10 +1,10 @@
 import Features from './components/Features'
 import Footer from './components/Footer'
-import Hero from './components/Hero'
+import Hero from './components/Hero/Hero'
 import Highlights from './components/Highlights'
 import HowItWorks from './components/HowItWorks'
 import Model from './components/Model'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
 	return (

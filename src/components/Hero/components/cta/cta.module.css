@@ -1,0 +1,7 @@
+.cta {
+	@apply flex flex-col items-center opacity-0 translate-y-20;
+}
+
+.cta_paragraph {
+	@apply font-normal text-xl;
+}
