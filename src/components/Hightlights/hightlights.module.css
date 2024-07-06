@@ -1,0 +1,11 @@
+.container {
+	@apply w-screen overflow-hidden h-full common-padding bg-zinc;
+}
+
+.container_content {
+	@apply mb-12 w-full items-end justify-between md:flex;
+}
+
+.container_links {
+	@apply flex flex-wrap items-end gap-5;
+}
