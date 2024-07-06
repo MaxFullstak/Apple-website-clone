@@ -1,0 +1,15 @@
+.container {
+	@apply flex flex-col items-center mt-5;
+}
+
+.model_container {
+	@apply w-full h-[75vh] md:h-[90vh] overflow-hidden relative;
+}
+
+.another_container {
+	@apply mx-auto w-full;
+}
+
+.title_model {
+	@apply text-sm font-light text-center mb-5;
+}

@@ -1,9 +1,12 @@
 import ModelView from './ModelView'
+import styles from './model.module.css'
 
 import { View } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { models, sizes } from '../constants'
-import { useModelHook } from '../hooks/Model.hook'
+import { models, sizes } from '../../constants'
+import { useModelHook } from '../../hooks/Model.hook'
+import ChangeSize from './ChangeSize'
+import ColorChange from './ColorChange'
 
 const Model = () => {
 	const {
@@ -18,7 +21,7 @@ const Model = () => {
 		small,
 		large,
 	} = useModelHook('#view1', '#view2', '#heading')
-	
+
 	return (
 		<section className='common-padding'>
 			<div className='screen-max-width'>
@@ -26,8 +29,8 @@ const Model = () => {
 					Take a closer look.
 				</h1>
 
-				<div className='flex flex-col items-center mt-5'>
-					<div className='w-full h-[75vh] md:h-[90vh] overflow-hidden relative'>
+				<div className={styles.container}>
+					<div className={styles.model_container}>
 						<ModelView
 							index={1}
 							groupRef={small}
@@ -63,35 +66,12 @@ const Model = () => {
 						</Canvas>
 					</div>
 
-					<div className='mx-auto w-full'>
-						<p className='text-sm font-light text-center mb-5'>{model.title}</p>
+					<div className={styles.another_container}>
+						<p className={styles.title_model}>{model.title}</p>
 						<div className='flex-center'>
-							<ul className='color-container'>
-								{models.map((item, i) => (
-									<li
-										key={i}
-										className='w-6 h-6 rounded-full mx-2 cursor-pointer'
-										style={{ backgroundColor: item.color[0] }}
-										onClick={() => setModel(item)}
-									/>
-								))}
-							</ul>
+							<ColorChange models={models} setModel={setModel} />
 
-							<button className='size-btn-container'>
-								{sizes.map(({ label, value }) => (
-									<span
-										className='size-btn'
-										style={{
-											backgroundColor: size === value ? 'white' : 'transparent',
-											color: size === value ? 'black' : 'white',
-										}}
-										onClick={() => setSize(value)}
-										key={label}
-									>
-										{label}
-									</span>
-								))}
-							</button>
+							<ChangeSize sizes={sizes} setSize={setSize} size={size} />
 						</div>
 					</div>
 				</div>
