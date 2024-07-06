@@ -1,0 +1,15 @@
+.container {
+	@apply flex items-center;
+}
+
+.video_container {
+	@apply w-full h-full flex-center rounded-3xl overflow-hidden bg-black;
+}
+
+.text_container {
+	@apply absolute top-12 left-[5%] z-10;
+}
+
+.text_style {
+	@apply md:text-2xl text-xl font-medium;
+}

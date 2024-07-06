@@ -1,6 +1,6 @@
 import { useVideoCarouselHook } from '../../../hooks/VideoCarousel.hook'
-import ButtonCarousel from './components/ButtonCarousel/ButtonCarousel'
 
+import ButtonCarousel from './components/ButtonCarousel/ButtonCarousel'
 import CarouselSlides from './components/CarouselSlides/CarouselSlides'
 import Slider from './components/Slider/Slider'
 
