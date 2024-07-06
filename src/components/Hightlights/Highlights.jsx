@@ -1,16 +1,12 @@
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
+import { useHightlightsHook } from '../../hooks/Hightlights.hook'
 import { rightImg, watchImg } from '../../utils'
 import Link from './Link/Link'
 import VideoCarousel from './VideoCarousel/VideoCarousel'
 import styles from './hightlights.module.css'
 
 const Highlights = () => {
-	useGSAP(() => {
-		gsap.to('#title', { opacity: 1, y: 0 })
-		gsap.to('.link', { opacity: 1, y: 0, duration: 1, stagger: 0.25 })
-	}, [])
-	
+	useHightlightsHook('#title', '.link')
+
 	return (
 		<section id='highlights' className={styles.container}>
 			<div className='screen-max-width'>
