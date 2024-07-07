@@ -1,0 +1,7 @@
+.container {
+	@apply relative h-[50vh] w-full flex items-center;
+}
+
+.style_video {
+	@apply w-full h-full object-cover object-center;
+}

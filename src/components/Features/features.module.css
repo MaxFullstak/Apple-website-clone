@@ -1,0 +1,27 @@
+.container {
+	@apply w-full common-padding bg-zinc relative overflow-hidden;
+}
+
+.another_container {
+	@apply flex flex-col justify-center items-center overflow-hidden;
+}
+
+.text_container {
+	@apply mt-32 mb-24 pl-24;
+}
+
+.style_title {
+	@apply text-5xl lg:text-7xl font-semibold;
+}
+
+.style_subtitle {
+	@apply text-5xl lg:text-7xl font-semibold;
+}
+
+.container_video_image {
+	@apply flex-center flex-col sm:px-10;
+}
+
+.container_image {
+	@apply flex flex-col w-full relative;
+}

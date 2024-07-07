@@ -85,3 +85,14 @@ export const footerLinks = [
 	'Legal',
 	'Site Map',
 ]
+
+export const firstText_1 = 'IPhone 15 Pro is'
+export const mainText_1 =
+	'the first iPhone to feature an aerospace-grade titanium design'
+export const finishText_1 =
+	'using the same alloy that spacecrafts use for missions to Mars'
+
+export const firstText_2 =
+	'Titanium has one of the best strength-to-weight ratios of any metal, making this aour'
+export const mainText_2 = 'lightest Pro models ever.'
+export const finishText_2 = `You'll notice the difference the moment you pick one up.`
