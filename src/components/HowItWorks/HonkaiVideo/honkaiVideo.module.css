@@ -1,0 +1,15 @@
+.container {
+	@apply mt-10 md:mt-20 mb-14;
+}
+
+.container_video {
+	@apply relative h-full flex-center;
+}
+
+.image_style {
+	@apply bg-transparent relative z-10;
+}
+
+.text_style {
+	@apply text-gray font-semibold text-center mt-3;
+}

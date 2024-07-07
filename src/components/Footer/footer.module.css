@@ -1,0 +1,11 @@
+.container {
+	@apply py-5 sm:px-10 px-5;
+}
+
+.border {
+	@apply bg-neutral-700 my-5 h-[1px] w-full;
+}
+
+.links_footer {
+	@apply flex md:flex-row flex-col md:items-center justify-between;
+}
